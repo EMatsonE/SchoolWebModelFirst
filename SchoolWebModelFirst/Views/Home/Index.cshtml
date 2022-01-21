@@ -1,0 +1,19 @@
+﻿@model List<Student>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>All Students</h2>
+@foreach (Student student in Model)
+{
+    <div>@student.StudentId : @student.FirstName @student.LastName</div>
+}
+
+<h2>Add Students</h2>
+<form method="post" action="/home/SaveStudent">
+    First Name:<input type="text" name="FirstName"/>
+    Last Name:<input type="text" name="LastName"/>
+    <input type="submit"/>
+</form>
