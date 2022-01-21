@@ -8,7 +8,7 @@ using SchoolWebModelFirst.Models;
 
 namespace SchoolWebModelFirst.Controllers
 {
-    public class StudentController1 : Controller
+    public class StudentController : Controller
     {
         // GET: StudentController1
         public ActionResult Index()
